@@ -1,15 +1,15 @@
 <div>
     <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=%2338C2FF&size=50&center=true&vCenter=true&height=60&width=600&lines=Bienvenido+a+mi+perfil!" alt="Title"></img>
-    </div>
-   <div align="center">
-    <picture>
-        <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="250px">
-    </picture>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Architects+Daughter&color=%2338C2FF&size=50&center=true&vCenter=true&height=60&width=600&lines=Bienvenido+a+mi+perfil!" alt="Title">
 </div>
-    <div align=center>
-        <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=I'm Alex Varela+%F0%9F%91%8B;Electrical Engineer; Computer+Science+Engineer;Back-End+Engineer;Problem+Solver;Freelancer;Open-Source+Enthusiast" alt="Headline" />
-    </div>
+
+<div align="center">
+    <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/Right_Side.gif?raw=true" width="250px">
+</div>
+
+<div align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?color=%236FDA44&size=32&center=true&vCenter=true&width=600&height=50&lines=I'm+Alex+Varela+%F0%9F%91%8B;Electrical+Engineer;+Computer+Science+Engineer;+Back-End+Engineer;+Problem+Solver;+Freelancer;+Open-Source+Enthusiast" alt="Headline">
+</div>
     <div align=center>
         <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"><img src="https://img.shields.io/badge/Linkedin-0077b5?style=flat&logo=linkedin" alt="LinkedIn" /></a>
         <a href="https://github.com/ingalexvarela"><img src="https://img.shields.io/badge/Telegram-0088cc?style=flat&logo=telegram" alt="Telegram" /></a>
