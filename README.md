@@ -42,7 +42,7 @@
   
   <div>
     <p align="center">
-      <a href="https://github.com/ingalexvarela/LeetCode_DailyChallenge_2023">
+      <a href="https://github.com/ingalexvarela/HackRF-One-Projects">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=ingalexvarela&repo=LeetCode_DailyChallenge_2023&theme=tokyonight" alt="GitHub Stats" />
       </a>
     </p>
