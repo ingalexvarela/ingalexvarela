@@ -36,14 +36,17 @@
     <h2>
       <picture> 
         <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/IDEs.gif?raw=true" width="50px">
-      </picture> My Repositories
+      </picture> My Repositories 
     </h2>
   </summary>
-
-  <!-- REPOS-START -->
-  <!-- Aquí se insertarán automáticamente los repos -->
-  <!-- REPOS-END -->
   
+  <div>
+    <p align="center">
+      <a href="https://github.com/ingalexvarela/LeetCode_DailyChallenge_2023">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=ingalexvarela&repo=LeetCode_DailyChallenge_2023&theme=tokyonight" alt="GitHub Stats" />
+      </a>
+    </p>
+  </div>
 </details>
 <hr>
 
