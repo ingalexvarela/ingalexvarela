@@ -1,14 +1,14 @@
 name: Update README with Repos
 
 on:
-  workflow_dispatch:  # Habilita la ejecución manual
+  workflow_dispatch:  # Esto permite ejecutar el workflow manualmente
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Run Script
+      - name: Test Workflow
         run: echo "Workflow ejecutado correctamente"
