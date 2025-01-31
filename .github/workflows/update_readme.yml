@@ -1,0 +1,39 @@
+name: Update README with Repos
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # Se ejecuta todos los días a la medianoche
+  workflow_dispatch:  # Permite ejecución manual desde GitHub Actions
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: Obtener repositorios y actualizar README.md
+        run: |
+          username="ingalexvarela"
+          readme="README.md"
+
+          # Obtener repositorios con la API de GitHub
+          repos=$(curl -s "https://api.github.com/users/$username/repos?sort=updated" | jq -r '.[0:6] | map("<p align=\"center\">\n  <a href=\"https://github.com/'"$username"'/\(.name)\">\n    <img src=\"https://github-readme-stats.vercel.app/api/pin/?username='"$username"'&repo=\(.name)&theme=tokyonight\" alt=\"\(.name)\" />\n  </a>\n</p>") | join("\n")')
+
+          # Reemplazar la sección en README.md
+          sed -i "/<!-- REPOS-START -->/,/<!-- REPOS-END -->/c\<!-- REPOS-START -->\n$repos\n<!-- REPOS-END -->" $readme
+
+          # Verificar si hay cambios en README.md
+          if git diff --quiet; then
+            echo "No hay cambios en el README.md"
+            exit 0
+          fi
+
+          # Hacer commit y push si hay cambios
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "github-actions@github.com"
+          git add README.md
+          git commit -m "🔄 Actualizando lista de repositorios"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
